@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #FFF;
+    --secondary-color: #2f2f2f;
+
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+
+nav{
+    width: 20vw;
+    height: 100vh;
+    background-color: bisque;
+}
+
+#body{
+    width: 100%;
+    height: 300vh;
+    background-color: azure;
+}
