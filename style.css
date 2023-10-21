@@ -11,19 +11,219 @@ body{
 
 header{
     position: fixed;
+    top: 0px;
     width: 100%;
     height: 80px;
-    background: linear-gradient(rgb(97, 12, 159) 70%,rgb(148, 11, 146),rgb(218, 12, 129),rgb(233, 87, 147))
+    /*background: linear-gradient(rgb(97, 12, 159) 70%,rgb(148, 11, 146),rgb(218, 12, 129),rgb(233, 87, 147));*/
+    background-color: white;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 75px;
+    z-index: -1;
+    background: rgb(148, 11, 146);
 }
 
 nav{
-    width: 20vw;
+    position: fixed;
+    top: 80px;
+    width: 300px;
     height: 100vh;
-    background-color: bisque;
+    background-color: #610C9F;
+    
 }
 
+nav a{
+    left: 0;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: rgb(233, 87, 147);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: list-item;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /*background: linear-gradient(to right,rgb(97, 12, 159) 90%,rgb(148, 11, 146),rgb(218, 12, 129),rgb(233, 87, 147));*/
+}
+
+nav a.active_button{
+    border-right: rgb(218, 12, 129);
+    border-right-width: 10px;
+    border-right-style: solid;
+    background: linear-gradient(to right,rgb(97, 12, 159) 90%,rgb(148, 11, 146),rgb(218, 12, 129))
+}
+nav a.not_active_button{
+    border-right: rgb(148, 11, 146);
+    border-right-width: 10px;
+    border-right-style: solid;
+    background: linear-gradient(to right,rgb(97, 12, 159) 90%,rgb(148, 11, 146))
+}
+/*
+.not_active_button::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 295px;
+    background: rgb(148, 11, 146);
+    overflow: hidden;
+}
+
+.active_button::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 295px;
+    background: rgb(218, 12, 129);
+    overflow: hidden;
+}
+*/
+nav a:hover{
+    background: linear-gradient(to right, rgb(97, 12, 159),rgb(148, 11, 146),rgb(218, 12, 129));
+    
+}
+
+
+
 #body{
+    
+    left:300px;
+    top: 80px;
     width: 100%;
     height: 300vh;
     background-color: azure;
 }
+
+/*SEARCH*/
+
+.input {
+    width: 260px;
+    /*max-width: 230px;*/
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid rgb(97, 12, 159);
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+
+  #search{
+    padding: 18px;
+  }
+
+  #header-logo{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    position: fixed;
+    left: 300px;
+    top: 0px;
+    text-decoration: none;
+    text-align: center;
+
+    /*background-color: red;*/
+
+    width: calc(100% - 600px);
+    height: 80px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+  }
+
+  #header-logo-logo{
+    height: 80px;
+    width: 80px;
+    float: left;
+    
+  }
+  #header-logo-logo img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+  }
+  #header-logo-text{
+    text-align: left;
+  }
+
+  #logo{
+    
+    display: block;
+    top: 10px;
+    padding: 15px;
+    margin: 0;
+    color: rgb(97, 12, 159);
+  }
+
+  #logowanie{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    justify-content: right;
+    height: 80px;
+    width: 300px;
+    /*background-color: blue;*/
+    float:right;
+  }
+
+  .login-button{
+
+    float: left;
+    padding: 5px 10px;
+    border: 0;
+    display: flex;
+    width: 80px;
+    height: 20px;
+    background-color: rgb(97, 12, 159);
+    
+    text-align: center;
+  }
+
+  .login-button:hover{
+    background-color: rgb(148, 11, 146);
+  }
+  .logowanie{
+    text-decoration: none;
+    color: rgb(233, 87, 147);
+    border-radius: 20px 0 0 20px;
+    border-right: rgb(148, 11, 146);
+    border-width: 1px;
+    border-style: solid;
+  }
+  .rejestracja{
+    text-decoration: none;
+    color: rgb(233, 87, 147);
+    border-radius: 0 20px 20px 0;
+    border-left: rgb(148, 11, 146);
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  #przyciski-logowania{
+    height: 80px;
+    padding-top: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 0px;
+    margin-left: 20px;
+    
+  }
