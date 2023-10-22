@@ -350,6 +350,7 @@ h4{
   border-top-color: rgb(97, 12, 159);
   border-top-width: 2px;
   border-top-style: solid;
+  width: 100%;
 }
 
 #kontakt-div{
@@ -388,4 +389,118 @@ h4{
 
 .kontakt-button:hover{
   background-color: rgb(200, 200, 200);
+}
+
+#oferty-pracy-opis{
+  text-align: center;
+}
+
+#oferty-pracy-div{
+  background-color: white;
+  width: 80%;
+  min-height: 100px;
+  height: auto;
+  overflow: hidden;
+}
+
+.oferty-pracy-a{
+  width: 100%;
+  display: list-item;
+  list-style: none;
+  padding-left: 50px;
+  border-top: rgb(97, 12, 159);
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom: rgb(97, 12, 159);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+#oferty-pracy-zew{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#login-register-div{
+  display: flex;
+  max-width: 100%;
+  min-height:200px;
+  background-color: white;
+  padding: 5%;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+#login-div{
+  width: 100%;
+  min-height:100px;
+  border-right-color: black;
+  border-right-style: solid;
+  border-right-width: 2px;
+}
+#register-div{
+  width: 100%;
+  min-height:100px;
+}
+
+#login-div-in{
+  padding: 50px;
+  padding-top: 0px;
+}
+#register-div-in{
+  padding: 50px;
+  padding-top: 0px;
+}
+
+.login-input{
+  margin: 2px;
+  font-size: 30px;
+  height: 40px;
+  width: 100%;
+  outline:rgb(97, 12, 159) 1px;
+  border:rgb(97, 12, 159) 1px;
+  background-color: rgb(242, 242, 242);
+}
+
+.button{
+  margin-left: 4px;
+  margin-top: 10px;
+  color: rgb(233, 87, 147);
+  background-color: rgb(97, 12, 159);
+  height: 45px;
+  width: 100%;
+}
+.button:hover{
+  background-color: rgb(148, 11, 146);
+}
+
+#parking-div{
+  width: calc(100% - 100px);
+  min-height: 100px;
+  background-color: white;
+  padding: 50px;
+}
+
+#parking-text{
+  
+  width: 100%;
+  min-height: 100px;
+}
+
+#left-filler2{
+  min-width: 300px;
+  min-height: 300px;
+  width: 300px;
+  height: 100px;
+  background-color: green;
+}
+
+#body-flexbox2{
+  display: flex;
 }
