@@ -504,3 +504,73 @@ h4{
 #body-flexbox2{
   display: flex;
 }
+
+#sklepy-div{
+  background-color: white;
+  width: 100%;
+  min-height: 300px;
+}
+
+#pietra{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+}
+
+.pietro{
+  font-size: 30px;
+  color: rgb(233, 87, 147);
+  background-color: rgb(97, 12, 159);
+  display: list-item;
+  list-style: none;
+  width: 50px;
+  height: 60px;
+  padding:30px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.pietro:hover{
+  background-color: rgb(148, 11, 146);
+}
+
+.pietro.active-pietro{
+  border-bottom: rgb(233, 87, 147) solid 5px;
+  height: 55px;
+}
+
+#plan-sklepow{
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  aspect-ratio: 16 / 12;
+}
+
+#lista-sklepow{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 300px;
+  background-color: gray;
+}
+
+.typ-sklepow{
+  border-top: rgb(97, 12, 159) solid 2px;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 50px;
+  
+}
+
+.plan-centrum-img{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
